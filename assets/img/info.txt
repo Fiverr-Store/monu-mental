@@ -1,0 +1,11 @@
+Here is the cpanel information to login
+
+https://gator3195.hostgator.com:2083/
+Login username thearste
+password B483tr!eFB!mCmXuUx
+
+
+you will see 3 domains already registered in cpanel domains. Please register a new one for
+ www.Exit167Events.com in cpanel. I have already paid for the domain. Once you setup in cpanel, 
+I will work with godaddy with ns1 nameservers from hostgator so it is correctly re-directed.
+

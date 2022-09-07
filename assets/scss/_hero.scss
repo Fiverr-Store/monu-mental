@@ -1,0 +1,75 @@
+/*--------------------------------------------------------------
+# hero-area
+--------------------------------------------------------------*/
+
+.hero-area {
+	position: relative;
+	width: 100%;
+	min-height:94vh;
+	background-image: url("../img/hero/hero-bg.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+  @media only screen and (max-width: 1199px) {
+    min-height: 80vh;
+  }
+  @media only screen and (max-width: 767px) {
+   min-height: 65vh;
+  }
+  @media only screen and (max-width: 482px) {
+   min-height: 60vh;
+  }
+
+	.hero-inner {
+		position: relative;
+		h1 {
+			color: #ffffff;
+			font-size: 45px;
+      line-height: 1.3;
+			@media only screen and (max-width: 1499px) {
+				font-size: 35px;
+			}
+      @media only screen and (max-width: 991px) {
+       font-size: 30px;
+      }
+      @media only screen and (max-width: 767px) {
+       font-size: 25px;
+      }
+      @media only screen and (max-width: 482px) {
+       font-size: 21px;
+      }
+
+		}
+	}
+
+	.custom-shape-divider-bottom-1662537668 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		overflow: hidden;
+		line-height: 0;
+		transform: rotate(180deg);
+	}
+
+	.custom-shape-divider-bottom-1662537668 svg {
+		position: relative;
+		display: block;
+		width: calc(128% + 1.3px);
+		height: 200px;
+    @media only screen and (max-width: 767px) {
+     height: 160px;
+    }
+    @media only screen and (max-width: 482px) {
+     height: 100px;
+    }
+	}
+
+	.custom-shape-divider-bottom-1662537668 .shape-fill {
+		fill: #ffffff;
+	}
+}
