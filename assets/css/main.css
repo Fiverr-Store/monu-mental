@@ -73,6 +73,26 @@ h6 a {
   color: inherit;
 }
 
+.btn-main {
+  display: inline-block;
+  text-decoration: none;
+  border: 0;
+  text-align: center;
+  padding: 11px 23px;
+  background-color: #178ED4;
+  border: 1px solid #39D0FF;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 16px;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+.btn-main:hover {
+  background-color: #9DC741;
+  border-color: #9DC741;
+  color: #fff;
+}
+
 /*--------------------------------------------------------------
   ##  Page Loader
   --------------------------------------------------------------*/
@@ -862,5 +882,118 @@ h6 a {
 }
 .monu .mon-text p:not(:last-child) {
   margin-bottom: 20px;
+}
+.monu .check-sec {
+  padding-top: 35px;
+}
+@media only screen and (max-width: 767px) {
+  .monu .check-sec {
+    padding-top: 20px;
+  }
+}
+.monu .check-sec h5 {
+  font-family: "Lato", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.5;
+  color: #1E2530;
+  margin-bottom: 26px;
+}
+@media only screen and (max-width: 991px) {
+  .monu .check-sec h5 {
+    font-size: 20px;
+    margin-bottom: 18px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .monu .check-sec h5 {
+    font-size: 19px;
+  }
+}
+.monu .list-single:not(:last-child) {
+  margin-bottom: 30px;
+}
+@media only screen and (max-width: 991px) {
+  .monu .list-single:not(:last-child) {
+    margin-bottom: 22px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .monu .list-single p {
+    font-size: 15px;
+  }
+}
+.monu .check {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 8px;
+}
+@media only screen and (max-width: 991px) {
+  .monu .check {
+    margin-bottom: 6px;
+  }
+}
+.monu .check img {
+  width: 27px;
+  min-width: 27px;
+  margin-right: 10px;
+}
+.monu .check span {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.3;
+  color: #1E2530;
+}
+@media only screen and (max-width: 991px) {
+  .monu .check span {
+    font-size: 17px;
+  }
+}
+
+/*--------------------------------------------------------------
+# cta
+--------------------------------------------------------------*/
+.cta {
+  background-image: url("../img/resources/cta-bg.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 90px 0px;
+  background-color: #23A2EE;
+}
+@media only screen and (max-width: 767px) {
+  .cta {
+    padding: 50px 0px;
+  }
+}
+.cta .cta-text h3 {
+  font-size: 28px;
+  margin-bottom: 16px;
+  color: #fff;
+}
+.cta .cta-text h3 span {
+  color: #9DC741;
+}
+@media only screen and (max-width: 991px) {
+  .cta .cta-text h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .cta .cta-text h3 {
+    font-size: 22px;
+    margin-bottom: 8px;
+  }
+}
+.cta .cta-text p {
+  font-size: 18px;
+  color: #fff;
+}
+@media only screen and (max-width: 767px) {
+  .cta .cta-text p {
+    font-size: 16px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
