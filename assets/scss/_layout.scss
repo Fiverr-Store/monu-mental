@@ -299,31 +299,31 @@
 			bottom: -10px;
 		}
 	}
-  .vect{
-    position: absolute;
-    bottom: 60px;
-    left: 40px;
-    max-width: 170px;
-    z-index: 1;
-    user-select: none;
-    @media only screen and (max-width: 1599px) {
-     max-width: 130px;
-     bottom: 40px;
-     left: 20px;
-    }
-    @media only screen and (max-width: 1199px) {
-     left: -14px;
-     max-width: 110px;
-     bottom: 20px;
-    }
-    @media only screen and (max-width: 767px) {
-     max-width: 80px;
-     bottom: 4px;
-    }
-    @media only screen and (max-width: 482px) {
-     max-width: 70px;
-    }
-  }
+	.vect {
+		position: absolute;
+		bottom: 60px;
+		left: 40px;
+		max-width: 170px;
+		z-index: 1;
+		user-select: none;
+		@media only screen and (max-width: 1599px) {
+			max-width: 130px;
+			bottom: 40px;
+			left: 20px;
+		}
+		@media only screen and (max-width: 1199px) {
+			left: -14px;
+			max-width: 110px;
+			bottom: 20px;
+		}
+		@media only screen and (max-width: 767px) {
+			max-width: 80px;
+			bottom: 4px;
+		}
+		@media only screen and (max-width: 482px) {
+			max-width: 70px;
+		}
+	}
 }
 @keyframes pulse {
 	0% {
@@ -416,7 +416,7 @@
 		}
 	}
 
-  .check-sec {
+	.check-sec {
 		padding-top: 35px;
 		@media only screen and (max-width: 767px) {
 			padding-top: 20px;
@@ -426,7 +426,7 @@
 			font-size: 22px;
 			font-weight: 700;
 			line-height: 1.5;
-      color: $title-color;
+			color: $title-color;
 			margin-bottom: 26px;
 			@media only screen and (max-width: 991px) {
 				font-size: 20px;
@@ -465,34 +465,38 @@
 			font-size: 18px;
 			font-weight: 700;
 			line-height: 1.3;
-      color: $title-color;
+			color: $title-color;
 			@media only screen and (max-width: 991px) {
 				font-size: 17px;
 			}
 		}
 	}
-
 }
-
 
 /*--------------------------------------------------------------
 # cta
 --------------------------------------------------------------*/
-.cta{
-  background-image: url('../img/resources/cta-bg.png');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding: 90px 0px;
-  background-color: #23A2EE;
+.cta {
+	background-image: url("../img/resources/cta-bg.png");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding-top: 90px;
+  padding-bottom: 230px;
+	background-color: #23a2ee;
+	@media only screen and (max-width: 991px) {
+		padding-top: 60px;
+  padding-bottom: 200px;
+	}
   @media only screen and (max-width: 767px) {
-   padding: 50px 0px;
+   padding-top: 50px;
+   padding-bottom: 180px;
   }
-  .cta-text{
-    h3 {
+	.cta-text {
+		h3 {
 			font-size: 28px;
 			margin-bottom: 16px;
-      color: #fff;
+			color: #fff;
 			span {
 				color: $primary-color;
 			}
@@ -505,12 +509,178 @@
 				margin-bottom: 8px;
 			}
 		}
-    p{
-      font-size: 18px;
-      color: #fff;
-      @media only screen and (max-width: 767px) {
-       font-size: 16px;
-      }
-    }
+		p {
+			font-size: 18px;
+			color: #fff;
+			@media only screen and (max-width: 767px) {
+				font-size: 16px;
+			}
+		}
+	}
+}
+
+/*--------------------------------------------------------------
+# join
+--------------------------------------------------------------*/
+.join {
+	padding-bottom: 70px;
+	margin-top: -150px;
+  @media only screen and (max-width: 991px) {
+   padding-bottom: 20px;
   }
+  @media only screen and (max-width: 767px) {
+   margin-top: -120px;
+  }
+	.form-bg {
+		position: relative;
+
+		.polygon {
+			width: 100%;
+			height: 100%;
+			min-height: 100%;
+      user-select: none;
+			// z-index: -1;
+			@media only screen and (max-width: 991px) {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				min-height: 100%;
+
+			}
+		}
+		.form-con {
+			position: absolute;
+			top: 36%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 100%;
+			padding: 0px 25px;
+			max-width: 750px;
+			@media only screen and (max-width: 991px) {
+				position: relative;
+				top: unset;
+				left: unset;
+				transform: none;
+				padding-top: 40px;
+				padding-bottom: 180px;
+			}
+			@media only screen and (max-width: 767px) {
+				padding-top: 25px;
+				padding-bottom: 160px;
+			}
+			@media only screen and (max-width: 767px) {
+				padding-left: 17px;
+				padding-right: 17px;
+			}
+		}
+		h3 {
+			font-size: 37px;
+			text-align: center;
+			color: #fff;
+			margin-bottom: 20px;
+			@media only screen and (max-width: 1199px) {
+				font-size: 32px;
+				margin-bottom: 14px;
+			}
+			@media only screen and (max-width: 991px) {
+				font-size: 28px;
+			}
+			@media only screen and (max-width: 767px) {
+				font-size: 23px;
+				margin-bottom: 8px;
+			}
+		}
+		p {
+			text-align: center;
+			color: #fff;
+			line-height: 1.4;
+			font-family: $font-libre;
+			font-weight: 700;
+			font-size: 21px;
+			margin-bottom: 30px;
+			@media only screen and (max-width: 1119px) {
+				font-size: 18px;
+				margin-bottom: 22px;
+			}
+			@media only screen and (max-width: 767px) {
+				font-size: 16px;
+				font-weight: 400;
+				margin-bottom: 16px;
+			}
+		}
+	}
+	.form-flex {
+		display: flex;
+		margin-left: -5px;
+		margin-right: -5px;
+		@media only screen and (max-width: 991px) {
+			display: block;
+		}
+		.input-field {
+			position: relative;
+			width: 75%;
+			margin-left: 5px;
+			margin-right: 5px;
+			@media only screen and (max-width: 991px) {
+				width: 90%;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			@media only screen and (max-width: 482px) {
+				width: 95%;
+			}
+		}
+		.form-control {
+			height: 62px;
+			border-radius: 50px;
+			text-indent: 36px;
+			color: $title-color;
+			@media only screen and (max-width: 991px) {
+				height: 55px;
+				margin-bottom: 14px;
+			}
+		}
+		.mail-icon {
+			position: absolute;
+			top: 50%;
+			left: 20px;
+			transform: translateY(-50%);
+			height: 18px;
+		}
+		.btn-submit {
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			text-decoration: none;
+			border: 0;
+			background: linear-gradient(0deg, #1087d1, #1087d1),
+				linear-gradient(0deg, #f28f33, #f28f33), #1873cf;
+			box-shadow: 0px 24px 34px rgba(16, 16, 16, 0.11);
+			border-radius: 50px;
+			padding: 5px 30px;
+			width: 25%;
+			height: 62px;
+			color: #fff;
+			font-weight: 700;
+			margin-left: 5px;
+			margin-right: 5px;
+			transition: all 0.2s ease-in;
+			&:hover {
+				background: darken($color: $secondary-color, $amount: 5%);
+				color: #fff;
+			}
+			@media only screen and (max-width: 991px) {
+				display: block;
+				width: 90%;
+				height: 55px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			@media only screen and (max-width: 482px) {
+				width: 95%;
+			}
+		}
+	}
 }
