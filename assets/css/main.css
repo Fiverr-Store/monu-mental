@@ -530,15 +530,21 @@ h6 a {
 # choose
 --------------------------------------------------------------*/
 .choose {
-  background: -webkit-gradient(linear, left bottom, left top, from(#E6ECFD), color-stop(74.16%, #FFFFFF));
-  background: linear-gradient(0deg, #E6ECFD 0%, #FFFFFF 74.16%);
+  background: -webkit-gradient(linear, left bottom, left top, from(#e6ecfd), color-stop(74.16%, #ffffff));
+  background: linear-gradient(0deg, #e6ecfd 0%, #ffffff 74.16%);
   padding-top: 60px;
-  padding-bottom: 30px;
+  padding-bottom: 110px;
+  position: relative;
 }
 @media only screen and (max-width: 991px) {
   .choose {
     padding-top: 35px;
-    padding-bottom: 15px;
+    padding-bottom: 60px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .choose {
+    padding-bottom: 40px;
   }
 }
 .choose .sec-t {
@@ -612,7 +618,7 @@ h6 a {
 .choose .p-single .p-icon::before {
   content: "";
   position: absolute;
-  border: 1px solid #1CA1F1;
+  border: 1px solid #1ca1f1;
   width: calc(100% + 40px);
   height: calc(100% + 40px);
   border-radius: 50%;
@@ -622,7 +628,7 @@ h6 a {
 .choose .p-single .p-icon::after {
   content: "";
   position: absolute;
-  border: 1px solid #1CA1F1;
+  border: 1px solid #1ca1f1;
   width: calc(100% + 40px);
   height: calc(100% + 40px);
   border-radius: 50%;
@@ -682,6 +688,68 @@ h6 a {
   background-color: #9DC741;
   line-height: 1;
 }
+.choose .wave {
+  width: 100%;
+  position: absolute;
+  bottom: -90px;
+  left: 0;
+}
+@media only screen and (max-width: 1299px) {
+  .choose .wave {
+    bottom: -70px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .choose .wave {
+    bottom: -50px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .choose .wave {
+    bottom: -30px;
+  }
+}
+@media only screen and (max-width: 482px) {
+  .choose .wave {
+    bottom: -10px;
+  }
+}
+.choose .vect {
+  position: absolute;
+  bottom: 60px;
+  left: 40px;
+  max-width: 170px;
+  z-index: 1;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+@media only screen and (max-width: 1599px) {
+  .choose .vect {
+    max-width: 130px;
+    bottom: 40px;
+    left: 20px;
+  }
+}
+@media only screen and (max-width: 1199px) {
+  .choose .vect {
+    left: -14px;
+    max-width: 110px;
+    bottom: 20px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .choose .vect {
+    max-width: 80px;
+    bottom: 4px;
+  }
+}
+@media only screen and (max-width: 482px) {
+  .choose .vect {
+    max-width: 70px;
+  }
+}
 
 @-webkit-keyframes pulse {
   0% {
@@ -717,5 +785,82 @@ h6 a {
             transform: scale(1);
     opacity: 0;
   }
+}
+/*--------------------------------------------------------------
+# telhealth
+--------------------------------------------------------------*/
+.telhealth .tel-text h3 {
+  font-size: 28px;
+  margin-bottom: 16px;
+}
+.telhealth .tel-text h3 span {
+  color: #9DC741;
+}
+@media only screen and (max-width: 991px) {
+  .telhealth .tel-text h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .telhealth .tel-text h3 {
+    font-size: 22px;
+    margin-bottom: 8px;
+  }
+}
+.telhealth .tel-list {
+  padding-top: 28px;
+}
+@media only screen and (max-width: 767px) {
+  .telhealth .tel-list {
+    padding-top: 20px;
+  }
+}
+.telhealth .flex-point {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.telhealth .flex-point:not(:last-child) {
+  margin-bottom: 9px;
+}
+.telhealth .flex-point img {
+  width: 24px;
+  min-width: 24px;
+  margin-right: 6px;
+}
+.telhealth .flex-point span {
+  font-weight: 700;
+  color: #1E2530;
+}
+
+/*--------------------------------------------------------------
+# monu
+--------------------------------------------------------------*/
+.monu {
+  padding-top: 20px;
+  padding-bottom: 70px;
+}
+.monu .mon-text h3 {
+  font-size: 28px;
+  margin-bottom: 16px;
+}
+.monu .mon-text h3 span {
+  color: #9DC741;
+}
+@media only screen and (max-width: 991px) {
+  .monu .mon-text h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .monu .mon-text h3 {
+    font-size: 22px;
+    margin-bottom: 8px;
+  }
+}
+.monu .mon-text p:not(:last-child) {
+  margin-bottom: 20px;
 }
 /*# sourceMappingURL=main.css.map */
