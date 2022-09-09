@@ -445,12 +445,14 @@
               <p>
                 A MonUMental Change in How Patients Relate to Their Care Providers Is Coming!
               </p>
-              <form action="#">
+              <form  id="contact-form" method="POST">
                 <div class="form-flex">
                   <div class="input-field">
-                    <input type="text" placeholder="Email" class="form-control">
+                    <input type="text" placeholder="Email" class="form-control email" id="EMAIL">
                     <img src="assets/img/resources/mail.svg" draggable="false" class="mail-icon" alt="">
+
                   </div><!-- /.input-field -->
+                  <div class="invalid-feedback emailError"></div>
                   <button class="btn-submit"> Submit </button>
                 </div><!-- /.form-flex -->
               </form>
@@ -480,10 +482,38 @@
   </div>
   <!--.page-loader-->
 
+    <!-- ======= ajax loading ======= -->
+    <div id="loader-ajax" class="loading-ajax hidden">Loading&#8230;</div>
+    <!-- ======= ajax loading end ======= -->
+      <!-- ======= ajax sucess popup ======= -->
+      <!-- Modal HTML -->
+      <div id="S_Modal" class="modal fade modal-index">
+        <div class="modal-dialog modal-confirm  modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <div class="icon-box">
+               <img src="assets/img/logo/check-blue.svg" alt="">
+              </div>
+              <h4 class="modal-title w-100">Success!</h4>
+            </div>
+            <div class="modal-body">
+              <p class="text-center" id="resultS"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem, facilis! </p>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-success w-100" data-bs-dismiss="modal">OK</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- ======= ajax sucess popup end ======= -->
 
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="assets/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/wow.min.js"></script>
-  <script src="assets/js/main.js?v=1"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/form.js"></script>
 
 
 </body>
